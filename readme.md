@@ -12,13 +12,13 @@ The model is implemented with Tensoflow package and it runs using GPU on the MAA
 
 First thing to do after creating GPU workspace is to dowload data that are stored in the S3. For this task you should : 
 
-*use the S3 script (in windows) : 
+* use the S3 script (in windows) : 
 
     echo $MAAP_ENV_TYPE
 	export MAAP_ENV_TYPE=VAL
 	export CLIENT_ID=97262f0b-d3ca-4492-bcf8-9a0e12bdede8
 
-*Downloading request using maap-s3.py
+* Downloading request using maap-s3.py
 	Since data are stored in :  **maap-scientific-data/shared/imane**   
 	list first stored files in that repository by runing : maap-s3.py list /maap-scientific-data/shared/imane/
 	Download the image file (.mat) : maap-s3.py download maap-scientific-data/shared/imane/*filename* *path_where_to_save_data*    
