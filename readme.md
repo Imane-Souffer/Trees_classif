@@ -1,7 +1,7 @@
 
-#This repository recalls using Hyper3dnet for trees classification using the MAAP  and hyperspectral data
+# This repository recalls using Hyper3dnet for trees classification using the MAAP  and hyperspectral data
 
-##Description 
+## Description 
 
 At the MAAP stack, the GPU use is enabled.    
 This code conduct a supervised training on Hyperspectral data from PRISMA mission using the Hyper3Dnet model. 
