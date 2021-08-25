@@ -9,11 +9,9 @@ The model is implemented with Tensoflow package and it runs using GPU on the MAA
 
 ## The workspace 
 
-The Jupyter MAAP stack dev file sample in : 
+The Jupyter MAAP stack dev file sample in :  **dev_file_GPU.txt** allows using the GPU. 
 
-	**dev_file_GPU.txt** allows using the GPU. 
-
-This devfile contains a nodeSelector and a toleratino to be able to use the gpu node.
+	This devfile contains a nodeSelector and a toleratino to be able to use the gpu node.
 
 
 ## datasets and packages 
@@ -49,7 +47,7 @@ First thing to do after creating GPU workspace is to dowload data that are store
 		**pip install -r requirements.txt**
 	In your env run : ** conda install -c conda-forge psutil ** 
 
-## Excution 
+## Execution 
 
 Followwing the jupyter notebook steps leads to Training the Hyper3Dnet Model with GPU use.
 A hint of the cells outputs are in the notebook : **Classiifcation_using_hyper3Dnet.ipynb**
