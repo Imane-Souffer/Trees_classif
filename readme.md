@@ -7,6 +7,14 @@ At the MAAP stack, the GPU use is enabled.
 This code conduct a supervised training on Hyperspectral data from PRISMA mission using the Hyper3Dnet model. 
 The model is implemented with Tensoflow package and it runs using GPU on the MAAP. 
 
+## The workspace 
+
+The Jupyter MAAP stack dev file sample in : 
+
+	**dev_file_GPU.txt** allows using the GPU. 
+
+This devfile contains a nodeSelector and a toleratino to be able to use the gpu node.
+
 
 ## datasets and packages 
 
@@ -43,18 +51,6 @@ First thing to do after creating GPU workspace is to dowload data that are store
 
 ## Excution 
 
-Followwing the jupyter notebook steps leads to :    
+Followwing the jupyter notebook steps leads to Training the Hyper3Dnet Model with GPU use.
+A hint of the cells outputs are in the notebook : **Classiifcation_using_hyper3Dnet.ipynb**
 
-1. Importing the code librairies 
-2. Define functions that :
-	read the matlab files ( data & ground truth)
-	Get and plot the distribution of the fround truth labels
-	Extract the major labels from that data
-	Reclassify the round truth in order to only major labels
-	Apply PCA to reduce the data dimensionality
-	Adding pads to data ( for CNN purposes)
-	Extracting patchs for training the testing
-3. The user define the path where the matlab files are stored and the code creates a *working_directory/weights/* to store the training file    
-4. Process them using functions in 2    
-5. Define the hyper3d model structure    
-7. Training the model by defining "train", evalute the training process and display the confusion matrix. 
